@@ -13,7 +13,7 @@ export default function App() {
             <span role="img" aria-label="heart">
               💖
             </span>{" "}
-            by KeepIt
+            by Keeppt
           </Text>
         </Footer>
       }>
