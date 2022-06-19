@@ -34,6 +34,14 @@
       "storage",
       "activeTab",
       "scripting"
-    ]
+    ],
+    "externally_connectable": {
+      "ids": [
+        "*"
+      ],
+      "matches": [
+        "https://n4ze3m-keeppt-in-747gj4pwfrg67-3000.githubpreview.dev/"
+      ]
+    }
   }
 }
