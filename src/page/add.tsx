@@ -50,6 +50,7 @@ export default function AddPage() {
 
   return (
     <Container>
+      {localStorage.getItem("token")}
       {status === "loading" && <Skeleton mt="sm" />}
       {status === "success" && <InfoCard data={cardData} />}
       <SaveKeep />

@@ -1,24 +1,9 @@
 export { }
 
 
-let data = []
-
-chrome.runtime.onMessageExternal.addListener(
-    function (request, sender, sendResponse) {
-        console.log(request)
-        const method = request.method
-
-        if (method === 'connected') {
-            return sendResponse({
-                message: data.length > 0
-            })
-        } else if (method === 'connect') {
-            data.push(request.data)
-            return sendResponse({
-                message: true
-            })
-        }
-        return sendResponse({
-            message: false
-        })
-    });
+chrome.runtime.onMessageExternal.addListener((request, sender, sendResponse) => {
+    // if (request.jwt) {
+        console.log('Token ::: ', request);
+        sendResponse({ success: true, message: 'Token has been received' });
+    // }
+});

@@ -1,16 +1,17 @@
 {
   "name": "keepit-browser",
   "displayName": "Keepit browser",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A basic Plasmo extension.",
-  "author": "ASUS",
+  "author": "n4ze3m",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build"
   },
   "dependencies": {
-    "@mantine/core": "^4.2.9",
-    "@mantine/hooks": "^4.2.9",
+    "@mantine/core": "^4.2.12",
+    "@mantine/hooks": "^4.2.12",
+    "@plasmohq/storage": "^0.6.4",
     "plasmo": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
