@@ -1,8 +1,12 @@
 import { Container, Skeleton } from "@mantine/core"
 import { useQuery } from "react-query"
 
+import { useStorage } from "@plasmohq/storage"
+
+import { Protect } from "~components/Common/Protected"
 import InfoCard from "~components/Info"
 import SaveKeep from "~components/save"
+import useLocal from "~utils/useLocal"
 
 export type TabInfo = {
   url: string
@@ -30,6 +34,8 @@ export default function AddPage() {
     return tab[0].id
   }
 
+  const [token] = useLocal("token")
+
   const fetchSite = async () => {
     const tabId = await getTabId()
     console.log(tabId)
@@ -49,11 +55,12 @@ export default function AddPage() {
   const { status, data: cardData } = useQuery<TabInfo>("site", fetchSite)
 
   return (
-    <Container>
-      {localStorage.getItem("token")}
-      {status === "loading" && <Skeleton mt="sm" />}
-      {status === "success" && <InfoCard data={cardData} />}
-      <SaveKeep />
-    </Container>
+    <>
+      <Container>
+        {status === "loading" && <Skeleton mt="sm" />}
+        {status === "success" && <InfoCard data={cardData} />}
+        <SaveKeep />
+      </Container>
+    </>
   )
 }

@@ -12,10 +12,13 @@
     "@mantine/core": "^4.2.12",
     "@mantine/hooks": "^4.2.12",
     "@plasmohq/storage": "^0.6.4",
+    "graphql": "^16.5.0",
+    "graphql-request": "^4.3.0",
     "plasmo": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-query": "^3.39.1"
+    "react-query": "^3.39.1",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "3.2.0",
@@ -34,14 +37,16 @@
       "tabs",
       "storage",
       "activeTab",
-      "scripting"
+      "scripting",
+      "contextMenus"
     ],
     "externally_connectable": {
       "ids": [
         "*"
       ],
       "matches": [
-        "https://n4ze3m-keeppt-in-747gj4pwfrg67-3000.githubpreview.dev/"
+        "https://n4ze3m-keeppt-in-747gj4pwfrg67-3000.githubpreview.dev/settings",
+        "https://keeppt-in.vercel.app/settings"
       ]
     }
   }

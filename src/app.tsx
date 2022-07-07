@@ -1,6 +1,7 @@
 import { AppShell, Footer, Text } from "@mantine/core"
+import { MemoryRouter } from "react-router-dom"
 
-import AddPage from "~page/add"
+import { Routing } from "~page"
 
 export default function App() {
   return (
@@ -17,7 +18,9 @@ export default function App() {
           </Text>
         </Footer>
       }>
-      <AddPage />
+      <MemoryRouter>
+        <Routing />
+      </MemoryRouter>
     </AppShell>
   )
 }
