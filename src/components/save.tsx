@@ -12,7 +12,7 @@ const mutation = gql`
     }
   }
 `
-const endpoint = "https://langford.stepzen.net/api/keeppt/__graphql"
+const endpoint = "https://langford.stepzen.net/api/keeppt/__graphql"i
 
 export default function SaveKeep() {
   const { value: userId, remove } = useLocal("token")

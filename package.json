@@ -2,7 +2,7 @@
   "name": "keepit-browser",
   "displayName": "Keepit browser",
   "version": "0.0.1",
-  "description": "A basic Plasmo extension.",
+  "description": "Modern browser extension for keeping your notes and bookmark links easy to use and find",
   "author": "n4ze3m",
   "scripts": {
     "dev": "plasmo dev",
