@@ -1,9 +1,8 @@
 import { Badge, Card, Group, Image, Text } from "@mantine/core"
 
-import type { TabInfo } from "~page/add"
 
 type InfoCardProps = {
-  data: TabInfo
+  data: any
 }
 
 export default function InfoCard({ data }: InfoCardProps) {

@@ -7,5 +7,13 @@ export default function useLocal(key: string) {
       setValue(result[key])
     })
   }, [key])
-  return [value]
+
+
+  const remove = () => {
+    chrome.storage.local.remove(key)
+    setValue(null)
+  }
+
+
+  return {value, remove}
 }
