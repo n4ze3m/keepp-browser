@@ -1,6 +1,6 @@
 {
-  "name": "keepit-browser",
-  "displayName": "Keepit browser",
+  "name": "keeppt-browser",
+  "displayName": "Keeppt",
   "version": "0.0.1",
   "description": "Modern browser extension for keeping your notes and bookmark links easy to use and find",
   "author": "n4ze3m",
