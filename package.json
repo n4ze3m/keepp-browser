@@ -1,7 +1,7 @@
 {
   "name": "keeppt-browser",
   "displayName": "Keeppt",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Modern browser extension for keeping your notes and bookmark links easy to use and find",
   "author": "n4ze3m",
   "scripts": {
@@ -46,7 +46,8 @@
       ],
       "matches": [
         "https://n4ze3m-keeppt-in-747gj4pwfrg67-3000.githubpreview.dev/settings",
-        "https://keeppt-in.vercel.app/settings"
+        "https://keeppt-in.vercel.app/settings",
+        "keeppt.online/settings"
       ]
     }
   }
